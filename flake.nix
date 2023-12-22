@@ -16,13 +16,13 @@
   in {
     packages."x86_64-linux".audio-relay = pkgs.stdenv.mkDerivation rec {
       name = "audio-relay";
-      version = "0.26.3";
+      version = "0.27.5";
 
       ## This can't be a flake input as it has multiple top-level folders
       ## See: https://github.com/NixOS/nix/issues/7083
       src = builtins.fetchurl {
-        url = "https://dl.audiorelay.net/setups/linux/audiorelay-0.26.3.tar.gz";
-        sha256 = "05553s1gp9bimr79nvagdk0l8ahmbwkqg6i6csavvzw40kisj49r";
+        url = "https://dl.audiorelay.net/setups/linux/audiorelay-0.27.5.tar.gz";
+        sha256 = "sha256:1iz8z3nz8jxdp57ksy466a1gwk5w3vibd9w1g2zyf8dxlhwl31f4";
       };
       sourceRoot = ".";
 
